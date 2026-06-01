@@ -25,6 +25,6 @@ public class HelloControllerTest {
     public void statusEndpointShouldReturnRunning() throws Exception {
         mockMvc.perform(get("/status"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Application is runn!"));
+                .andExpect(content().string("Application is running!"));
     }
 }
